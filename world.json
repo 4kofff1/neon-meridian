@@ -1,0 +1,754 @@
+{
+  "format": "sogni-world@1",
+  "id": "neon-meridian",
+  "title": "NEON MERIDIAN",
+  "subtitle": "A city of light under a sun that stopped halfway through setting.",
+  "credit": "Planned by Sogni's own LLMs with the Sogni Worlds Kit agent: written and screened by DeepSeek V4 Flash; objects found by Qwen 3.6. Pictures by Krea 2, films by MiniMax H3, voices by Qwen3-TTS, music by MiniMax Music 3, figures by Pixal3D, all on Sogni.",
+  "aspect": {
+    "width": 2304,
+    "height": 1536
+  },
+  "start": "midnight-arcade",
+  "order": null,
+  "music": {
+    "src": "audio/music.mp3",
+    "volume": 1,
+    "underFilms": 0.5,
+    "credit": "Music made with Sogni"
+  },
+  "intro": {
+    "eyebrow": "An interactive synthwave odyssey",
+    "tagline": "The sun stopped 1,984 days ago. Someone has to ask why.",
+    "begin": "Drop the coin"
+  },
+  "places": [
+    {
+      "id": "midnight-arcade",
+      "title": "The Frozen Arcade",
+      "chapter": "The Midnight Arcade",
+      "caption": "A dead arcade, one living cabinet, and a city that never set.",
+      "still": "stills/midnight-arcade.webp",
+      "loop": {
+        "src": "films/midnight-arcade-loop.mp4",
+        "src720": "films/midnight-arcade-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-midnight-arcade.mp3",
+        "lines": [
+          {
+            "text": "The rain has been falling for 1,984 days.",
+            "start": 0.61,
+            "end": 3.87
+          },
+          {
+            "text": "Every cabinet in this arcade is dead but one.",
+            "start": 4.45,
+            "end": 6.76
+          },
+          {
+            "text": "That hum, and the high score Vex, are the city calling you in.",
+            "start": 7.45,
+            "end": 11.12
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "coin-slot",
+          "label": "Drop a coin in the slot",
+          "hint": "The cabinet is humming the same note as the sun outside",
+          "at": [
+            0.366,
+            0.749
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M567 731L579 731L582 734L584 742L578 741L578 745L586 753L587 763L590 765L590 782L588 783L590 788L585 794L576 798L550 800L535 797L533 800L529 800L529 794L525 789L523 781L525 744L532 736Z"
+          },
+          "to": "boulevard",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/midnight-arcade-coin-slot.mp4",
+            "src720": "films/midnight-arcade-coin-slot-720.mp4",
+            "seconds": 10.125
+          },
+          "rewind": {
+            "src": "films/midnight-arcade-coin-slot-rewind.mp4",
+            "src720": "films/midnight-arcade-coin-slot-rewind-720.mp4",
+            "seconds": 10.125
+          }
+        },
+        {
+          "id": "locket",
+          "label": "Open the locket",
+          "hint": "A photo of a woman, and an engraving inside",
+          "at": [
+            0.253,
+            0.517
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M381 479L399 481L409 488L411 501L408 513L409 525L402 530L402 536L408 538L409 550L404 565L398 570L370 565L364 558L364 524L366 521L365 509L368 489L373 481Z"
+          },
+          "to": null,
+          "collect": true,
+          "figure": {
+            "model": "figures/midnight-arcade-locket.glb",
+            "icon": "figures/midnight-arcade-locket.webp",
+            "name": "The locket"
+          },
+          "film": {
+            "src": "films/midnight-arcade-locket.mp4",
+            "src720": "films/midnight-arcade-locket-720.mp4",
+            "seconds": 6.583
+          },
+          "reveal": {
+            "still": "stills/reveals/midnight-arcade-locket.webp",
+            "narration": {
+              "src": "audio/narration-reveal-midnight-arcade-locket.mp3",
+              "lines": [
+                {
+                  "text": "She stood in front of this exact cabinet, years ago. The engraving says: \"For those who stay the night.\"",
+                  "start": 0.69,
+                  "end": 6.64
+                }
+              ]
+            },
+            "done": "Close the locket",
+            "back": {
+              "src": "films/midnight-arcade-locket-back.mp4",
+              "src720": "films/midnight-arcade-locket-back-720.mp4",
+              "seconds": 6.583
+            }
+          }
+        },
+        {
+          "id": "high-score-screen",
+          "label": "Read the high score",
+          "hint": "Three letters, glowing in teal",
+          "at": [
+            0.345,
+            0.456
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M472 398L542 399L566 406L572 414L573 423L577 424L576 429L584 439L583 447L585 451L583 454L586 456L588 464L592 467L589 472L594 478L591 489L595 492L594 505L596 508L585 514L567 513L564 516L528 516L515 519L510 517L505 519L471 519L460 517L451 512L447 501L447 487L443 480L444 474L439 468L440 456L438 451L440 442L436 439L436 413L441 405L447 404L450 401Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/midnight-arcade-high-score-screen.mp4",
+            "src720": "films/midnight-arcade-high-score-screen-720.mp4",
+            "seconds": 5.875
+          }
+        },
+        {
+          "id": "jukebox",
+          "label": "Play the jukebox",
+          "hint": "It hums the same note as the cabinet",
+          "at": [
+            0.465,
+            0.524
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M690 399L740 401L743 405L756 410L768 422L783 446L788 478L791 481L788 506L788 607L792 615L792 652L788 662L789 671L785 675L769 675L755 664L742 665L741 663L732 664L730 661L725 661L725 664L729 667L724 668L724 670L715 669L714 671L706 670L701 672L695 668L690 672L688 669L684 669L683 673L673 674L666 681L652 682L650 654L652 643L649 627L651 620L657 616L661 608L660 567L663 563L661 562L659 551L642 536L639 502L633 500L630 496L627 463L632 441L639 433L644 421L661 409L686 402Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/midnight-arcade-jukebox.mp4",
+            "src720": "films/midnight-arcade-jukebox-720.mp4",
+            "seconds": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "boulevard",
+      "title": "The Last Open Boulevard",
+      "chapter": "Night 1,984",
+      "caption": "The city hums under a sun that gave up on setting.",
+      "still": "stills/boulevard.webp",
+      "loop": {
+        "src": "films/boulevard-loop.mp4",
+        "src720": "films/boulevard-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-boulevard.mp3",
+        "lines": [
+          {
+            "text": "The sun froze 1,984 days ago. The grid keeps the city alive.",
+            "start": 0.56,
+            "end": 5.74
+          },
+          {
+            "text": "Midnight FM says someone has to reach the Sun Gate.",
+            "start": 6.29,
+            "end": 8.98
+          },
+          {
+            "text": "Pixel knows the way. Chrome Marlowe holds the key.",
+            "start": 9.61,
+            "end": 12.96
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "pixel-sign",
+          "label": "Follow the sign to Chrome Marlowe's garage",
+          "hint": "The kid's name is on it. He knows the way.",
+          "at": [
+            0.645,
+            0.326
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M902 295L1086 299L1093 307L1094 326L1092 328L1090 345L1091 351L1096 357L1094 370L1090 375L1078 378L993 378L990 380L901 379L897 376L895 367L895 305L898 298Z"
+          },
+          "to": "chrome-garage",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/boulevard-pixel-sign.mp4",
+            "src720": "films/boulevard-pixel-sign-720.mp4",
+            "seconds": 15.083
+          },
+          "rewind": {
+            "src": "films/boulevard-pixel-sign-rewind.mp4",
+            "src720": "films/boulevard-pixel-sign-rewind-720.mp4",
+            "seconds": 15.083
+          }
+        },
+        {
+          "id": "hoverboard",
+          "label": "Ride with Pixel",
+          "hint": "He knows every shortcut in the city.",
+          "at": [
+            0.662,
+            0.758
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M978 761L1003 766L1025 764L1040 769L1060 764L1069 764L1075 769L1075 777L1069 785L1060 788L1036 783L1027 778L998 782L983 779L977 774L975 765Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/boulevard-hoverboard.mp4",
+            "src720": "films/boulevard-hoverboard-720.mp4",
+            "seconds": 8
+          }
+        },
+        {
+          "id": "tallest-skyscraper",
+          "label": "Collect the tallest skyscraper",
+          "hint": "The grid's first monument.",
+          "at": [
+            0.174,
+            0.314
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M241 0L392 0L393 2L394 105L399 125L399 168L397 180L400 183L401 195L401 210L397 223L401 227L404 242L402 256L405 277L403 302L409 313L412 328L410 340L410 382L412 384L413 398L413 433L411 436L426 449L429 484L435 485L434 489L437 493L456 499L467 506L472 513L475 513L470 532L468 590L472 604L470 625L467 627L398 632L341 632L336 630L330 632L299 632L279 631L277 629L263 630L241 626L159 630L55 630L48 625L48 605L50 603L48 600L48 588L52 582L52 547L56 519L58 518L55 501L59 496L58 492L61 490L59 485L62 473L70 470L124 471L135 469L138 458L140 421L143 412L147 408L159 408L165 404L182 270L184 264L193 258L198 248L198 229L203 210L205 183L209 178L209 157L216 121L216 102L221 78L221 64L223 63L224 55L237 42Z"
+          },
+          "to": null,
+          "collect": true,
+          "figure": {
+            "model": "figures/boulevard-tallest-skyscraper.glb",
+            "icon": "figures/boulevard-tallest-skyscraper.webp",
+            "name": "The tallest skyscraper"
+          },
+          "film": {
+            "src": "films/boulevard-tallest-skyscraper.mp4",
+            "src720": "films/boulevard-tallest-skyscraper-720.mp4",
+            "seconds": 8
+          }
+        },
+        {
+          "id": "radio",
+          "label": "Turn on the radio",
+          "hint": "Midnight FM is always on.",
+          "at": [
+            0.443,
+            0.646
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M664 651L675 652L685 657L696 668L701 669L701 674L698 677L689 677L687 674L681 673L677 675L665 674L665 666L662 660Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/boulevard-radio.mp4",
+            "src720": "films/boulevard-radio-720.mp4",
+            "seconds": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "chrome-garage",
+      "title": "Chrome Garage",
+      "chapter": "Under the overpass",
+      "caption": "Under the overpass, a mechanic with one good eye knows more than he says.",
+      "still": "stills/chrome-garage.webp",
+      "loop": {
+        "src": "films/chrome-garage-loop.mp4",
+        "src720": "films/chrome-garage-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-chrome-garage.mp3",
+        "lines": [
+          {
+            "text": "Chrome Marlowe keeps the last garage on the boulevard. He built the coupe.",
+            "start": 0.59,
+            "end": 4.87
+          },
+          {
+            "text": "He's installing a key to the Sun Gate, and he's watching you the whole time.",
+            "start": 5.41,
+            "end": 9.19
+          },
+          {
+            "text": "He knew Vex before she went on the air.",
+            "start": 9.72,
+            "end": 11.6
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "cassettes",
+          "label": "Browse the wall of cassettes",
+          "hint": "Chrome keeps every broadcast Vex ever made",
+          "at": [
+            0.188,
+            0.33
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M6 140L19 140L10 143L17 146L17 148L31 145L37 149L46 149L52 153L73 156L92 163L99 161L103 164L111 164L124 171L135 172L144 178L153 178L166 185L174 185L189 191L195 189L200 194L222 196L228 201L240 203L241 205L260 207L272 213L282 212L295 217L306 217L307 219L331 224L338 228L349 228L359 233L382 237L400 244L422 249L430 249L434 252L441 252L445 256L474 261L477 264L481 264L481 261L483 261L482 265L486 267L494 267L509 276L515 275L519 279L526 278L530 283L537 282L539 285L549 288L555 295L555 308L558 311L556 313L558 318L556 323L559 332L559 340L556 343L558 345L557 361L554 364L558 374L558 383L556 384L557 404L554 405L552 415L537 424L524 421L519 429L508 430L495 439L488 439L485 443L473 448L452 462L438 462L437 459L433 458L430 464L433 472L430 475L412 474L412 478L408 479L404 486L389 487L387 489L381 487L377 490L370 489L369 491L363 490L360 486L353 485L363 483L364 465L369 465L369 468L372 468L372 465L385 468L386 457L382 453L374 455L378 451L374 446L365 446L357 442L354 437L354 431L347 431L343 435L345 441L341 442L340 438L336 436L338 432L334 427L326 432L330 434L329 437L326 437L320 429L315 429L319 427L321 422L318 417L312 417L307 420L300 419L298 412L287 414L286 410L284 410L283 414L279 414L273 399L277 398L281 392L277 388L272 387L271 384L267 385L271 390L265 390L266 401L271 404L266 406L263 410L263 415L260 417L262 423L261 432L264 435L263 447L266 449L266 457L262 460L261 468L265 470L265 473L257 477L255 483L248 482L251 480L251 477L245 473L228 473L227 471L221 473L220 470L224 467L219 462L214 462L210 467L206 461L197 459L197 456L202 454L202 452L199 452L198 446L195 444L189 445L186 441L182 441L182 437L178 436L179 431L177 430L178 421L181 420L181 416L177 414L190 407L190 403L186 402L183 396L181 404L176 404L178 393L174 391L170 394L156 391L149 392L147 397L152 400L159 399L164 401L165 398L171 399L168 408L165 405L160 405L159 402L155 402L154 405L150 406L150 409L160 413L161 417L164 417L166 412L171 413L171 416L164 419L157 417L159 422L151 421L149 429L142 433L132 430L131 427L125 429L126 425L117 417L106 419L97 416L84 422L71 422L71 417L63 420L65 429L61 431L58 429L59 421L51 417L49 420L39 423L30 416L25 419L20 416L15 418L0 416L0 144L5 143Z"
+          },
+          "to": "midnight-fm-tower",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/chrome-garage-cassettes.mp4",
+            "src720": "films/chrome-garage-cassettes-720.mp4",
+            "seconds": 10.125
+          },
+          "rewind": {
+            "src": "films/chrome-garage-cassettes-rewind.mp4",
+            "src720": "films/chrome-garage-cassettes-rewind-720.mp4",
+            "seconds": 10.125
+          }
+        },
+        {
+          "id": "glowing-key",
+          "label": "Take the glowing key",
+          "hint": "It hums with the same light as the sun outside",
+          "at": [
+            0.647,
+            0.502
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M984 495L995 496L993 500L1006 503L1013 516L1016 517L1012 522L980 517L969 520L940 518L942 515L940 510L946 507L954 507L949 504L950 502L960 498L982 498L985 501L987 499L983 497Z"
+          },
+          "to": null,
+          "collect": true,
+          "figure": {
+            "model": "figures/chrome-garage-glowing-key.glb",
+            "icon": "figures/chrome-garage-glowing-key.webp",
+            "name": "The glowing key"
+          },
+          "film": {
+            "src": "films/chrome-garage-glowing-key.mp4",
+            "src720": "films/chrome-garage-glowing-key-720.mp4",
+            "seconds": 5.875
+          }
+        },
+        {
+          "id": "engine",
+          "label": "Look under the hood",
+          "hint": "Chrome built this engine to outrun the grid itself",
+          "at": [
+            0.653,
+            0.45
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M1008 385L1055 386L1074 389L1114 389L1124 392L1095 438L1090 455L1085 460L1085 465L1079 471L1075 486L1060 515L1055 531L1042 528L1027 505L1014 496L1010 492L1008 485L999 479L996 470L990 467L982 469L984 462L981 454L963 435L921 420L887 414L888 408L898 402L930 396L947 396L956 392ZM925 442L925 447L931 446L928 447L928 451L934 452L935 455L939 456L939 459L943 460L939 464L945 466L945 469L948 470L948 472L944 473L945 476L949 476L950 473L955 472L955 469L959 469L960 472L956 475L959 475L965 484L969 484L970 487L980 492L978 498L973 498L972 501L981 504L983 506L982 509L977 511L941 511L936 507L936 501L931 502L920 482L918 471L914 465L915 459L913 455L909 454L909 452L921 451L922 449L918 448L918 445L923 445Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/chrome-garage-engine.mp4",
+            "src720": "films/chrome-garage-engine-720.mp4",
+            "seconds": 8.708
+          }
+        },
+        {
+          "id": "cracked-lens",
+          "label": "Ask about the cracked lens",
+          "hint": "The mechanic remembers who fixed it for him",
+          "at": [
+            0.78,
+            0.407
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M1212 368L1225 368L1232 372L1241 380L1248 398L1248 412L1243 417L1243 420L1246 422L1239 428L1240 432L1233 438L1232 442L1229 442L1228 447L1215 451L1206 449L1198 444L1185 420L1181 408L1182 391L1189 378L1203 370Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/chrome-garage-cracked-lens.mp4",
+            "src720": "films/chrome-garage-cracked-lens-720.mp4",
+            "seconds": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "midnight-fm-tower",
+      "title": "The Signal Booth",
+      "chapter": "Midnight FM Tower",
+      "caption": "The voice you've been chasing is coming from this booth.",
+      "still": "stills/midnight-fm-tower.webp",
+      "loop": {
+        "src": "films/midnight-fm-tower-loop.mp4",
+        "src720": "films/midnight-fm-tower-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-midnight-fm-tower.mp3",
+        "lines": [
+          {
+            "text": "The tower is empty, but the microphone is still warm.",
+            "start": 0.37,
+            "end": 3.4
+          },
+          {
+            "text": "Someone left this locket here, and its photo matches the one in the arcade.",
+            "start": 4.39,
+            "end": 7.87
+          },
+          {
+            "text": "The recording loops the same words: I am the sun. I am the one who stayed.",
+            "start": 8.68,
+            "end": 13.83
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "glass-wall",
+          "label": "Go through the glass wall",
+          "hint": "The Sun Gate is out there, where the sun touches the horizon",
+          "at": [
+            0.387,
+            0.304
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M322 94L333 97L370 96L374 98L396 99L424 96L427 98L437 97L453 101L467 101L469 103L513 103L521 105L531 102L533 104L549 103L561 107L586 108L591 106L594 108L604 107L610 110L627 110L630 108L646 111L674 110L677 112L720 113L744 115L747 117L751 117L756 113L766 115L766 120L763 122L762 144L760 148L760 171L764 190L763 209L747 223L740 235L740 252L735 258L731 274L729 305L726 307L727 312L721 321L720 331L722 351L727 353L730 359L743 367L750 367L750 372L757 375L755 382L759 384L759 387L752 394L752 397L755 399L753 405L748 407L745 402L742 402L741 408L737 408L736 403L731 401L724 409L716 407L713 411L664 413L662 367L657 359L656 349L648 343L648 335L636 333L611 335L610 345L604 353L606 356L604 359L606 364L604 366L604 377L606 379L602 385L603 392L601 398L603 401L599 407L601 411L597 414L603 429L601 433L596 431L589 433L585 447L585 458L587 461L583 462L583 455L579 454L583 451L581 439L570 430L549 429L547 432L540 431L538 435L541 442L543 459L545 460L543 463L544 470L547 474L542 479L544 481L543 493L545 501L548 502L547 511L549 518L530 515L530 513L537 512L536 509L531 508L532 502L530 500L532 498L532 490L530 488L532 474L530 469L533 467L528 461L528 456L531 454L531 446L513 444L520 436L522 428L514 425L512 419L515 401L513 398L512 360L504 354L484 353L477 355L476 420L472 421L473 426L478 428L477 433L471 433L471 424L453 424L453 413L450 411L450 403L443 400L442 396L436 394L427 395L417 400L415 406L417 415L415 429L407 420L405 402L400 399L389 401L389 404L382 408L380 405L373 405L372 403L365 404L365 411L357 419L349 420L347 418L348 414L343 413L340 418L332 420L332 414L327 409L330 404L327 387L329 375L324 369L326 360L322 347L323 343L318 340L317 306L312 285L308 283L307 234L304 229L304 221L301 219L302 197L299 191L301 186L299 185L299 172L296 169L297 160L295 159L296 135L294 133L296 129L290 127L296 118L294 118L294 115L287 113L287 110L290 109L289 103L297 100L299 97L320 96ZM888 120L894 121L896 127L893 159L894 173L888 179L891 183L887 185L887 198L883 205L881 217L883 226L880 233L885 241L877 243L876 255L872 260L871 277L868 279L871 281L871 284L869 285L868 292L866 292L864 319L859 330L860 339L855 355L856 364L853 369L852 383L840 387L835 392L835 398L832 402L822 405L817 400L812 399L809 403L811 405L810 408L805 411L799 411L792 408L789 403L789 396L785 390L787 375L795 367L801 365L807 355L818 314L822 307L826 282L824 274L817 265L818 254L821 250L818 247L819 236L816 223L813 218L807 216L805 210L798 208L793 202L793 189L795 188L798 175L814 175L822 171L823 168L839 166L835 163L829 163L829 161L836 161L838 154L845 147L856 141L861 141L864 133L871 126L884 125Z"
+          },
+          "to": "sun-gate",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/midnight-fm-tower-glass-wall.mp4",
+            "src720": "films/midnight-fm-tower-glass-wall-720.mp4",
+            "seconds": 10.125
+          },
+          "rewind": {
+            "src": "films/midnight-fm-tower-glass-wall-rewind.mp4",
+            "src720": "films/midnight-fm-tower-glass-wall-rewind-720.mp4",
+            "seconds": 10.125
+          }
+        },
+        {
+          "id": "shattered-locket",
+          "label": "Examine the shattered locket",
+          "hint": "The same locket from the arcade, now broken",
+          "at": [
+            0.786,
+            0.744
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M1265 648L1275 650L1281 655L1283 664L1279 671L1297 691L1305 714L1305 746L1292 783L1268 801L1252 807L1253 836L1250 845L1232 863L1216 871L1193 876L1153 874L1140 869L1125 854L1123 846L1125 826L1133 816L1154 802L1184 794L1211 793L1212 787L1206 783L1202 775L1197 747L1196 734L1199 720L1215 688L1233 672L1255 666L1259 652Z"
+          },
+          "to": null,
+          "collect": true,
+          "figure": {
+            "model": "figures/midnight-fm-tower-shattered-locket.glb",
+            "icon": "figures/midnight-fm-tower-shattered-locket.webp",
+            "name": "The shattered locket"
+          },
+          "film": {
+            "src": "films/midnight-fm-tower-shattered-locket.mp4",
+            "src720": "films/midnight-fm-tower-shattered-locket-720.mp4",
+            "seconds": 8
+          },
+          "reveal": {
+            "still": "stills/reveals/midnight-fm-tower-shattered-locket.webp",
+            "narration": {
+              "src": "audio/narration-reveal-midnight-fm-tower-shattered-locket.mp3",
+              "lines": [
+                {
+                  "text": "The photo is Dr. Elara Halcyon — the architect who vanished the night the sun stopped.",
+                  "start": 0.68,
+                  "end": 5.04
+                }
+              ]
+            },
+            "done": "Close the locket",
+            "back": {
+              "src": "films/midnight-fm-tower-shattered-locket-back.mp4",
+              "src720": "films/midnight-fm-tower-shattered-locket-back-720.mp4",
+              "seconds": 8
+            }
+          }
+        },
+        {
+          "id": "microphone",
+          "label": "Listen to the recording",
+          "hint": "The voice that keeps calling you",
+          "at": [
+            0.503,
+            0.368
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M810 245L814 245L814 256L812 259L814 259L814 266L820 270L821 290L814 324L804 356L797 365L783 371L779 375L785 406L785 422L783 427L785 450L783 463L779 471L780 490L778 500L776 504L771 504L767 490L767 474L763 466L763 442L760 437L759 428L759 420L763 418L759 411L760 402L762 402L760 394L764 391L764 377L766 375L759 372L753 364L740 360L727 351L723 342L724 327L739 262L744 249L777 246L790 248L805 254Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/midnight-fm-tower-microphone.mp4",
+            "src720": "films/midnight-fm-tower-microphone-720.mp4",
+            "seconds": 6.583
+          }
+        },
+        {
+          "id": "mixing-console",
+          "label": "Touch the mixing deck",
+          "hint": "The board that keeps the signal alive",
+          "at": [
+            0.631,
+            0.638
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M840 438L849 441L890 445L908 451L984 457L1010 464L1021 464L1026 467L1038 466L1041 468L1079 470L1091 473L1094 476L1112 477L1116 481L1122 477L1134 478L1137 481L1147 480L1152 482L1155 480L1160 483L1172 483L1176 486L1182 485L1200 490L1228 493L1233 497L1250 499L1258 506L1278 513L1280 517L1286 520L1302 524L1308 528L1309 532L1315 532L1328 538L1333 542L1333 547L1336 548L1336 575L1332 581L1333 615L1331 628L1323 671L1320 673L1322 677L1321 699L1310 701L1305 699L1308 694L1299 688L1300 684L1292 681L1292 661L1286 659L1281 648L1259 647L1251 649L1250 653L1246 656L1251 657L1253 660L1251 668L1246 661L1242 661L1236 666L1229 668L1227 674L1221 676L1214 685L1207 681L1205 686L1207 691L1206 703L1197 711L1195 728L1193 730L1186 726L1183 734L1176 735L1173 738L1153 739L1143 741L1137 745L1126 744L1109 750L1083 754L1071 759L1063 758L1045 763L1026 764L1015 767L1012 770L975 777L970 780L966 790L965 842L956 843L953 846L926 856L914 856L899 861L866 867L862 870L847 870L841 873L828 871L815 856L805 836L794 827L788 816L781 810L780 805L770 797L762 785L747 770L745 763L736 756L734 746L727 744L724 737L703 717L697 705L684 695L679 686L680 680L677 679L674 672L664 667L663 662L644 645L640 638L641 635L637 635L636 631L626 624L616 612L616 609L610 603L608 574L611 567L624 562L637 560L677 547L691 545L699 541L707 541L716 535L744 527L788 519L802 514L810 506L812 500L814 500L816 484L822 475L824 466L829 461L828 457L831 450Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/midnight-fm-tower-mixing-console.mp4",
+            "src720": "films/midnight-fm-tower-mixing-console-720.mp4",
+            "seconds": 6.583
+          }
+        }
+      ]
+    },
+    {
+      "id": "sun-gate",
+      "title": "The Sun Gate",
+      "chapter": "The edge of the horizon",
+      "caption": "Juno-9 states the exact terms of the choice.",
+      "still": "stills/sun-gate.webp",
+      "loop": {
+        "src": "films/sun-gate-loop.mp4",
+        "src720": "films/sun-gate-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "src": "audio/narration-sun-gate.mp3",
+        "lines": [
+          {
+            "text": "This is the Sun Gate, the last stop on the boulevard.",
+            "start": 0.38,
+            "end": 3.2
+          },
+          {
+            "text": "Juno-9 cannot lie, so listen carefully to what they say.",
+            "start": 3.93,
+            "end": 7.31
+          },
+          {
+            "text": "If you turn the key, the sun will rise and the grid will collapse. If you drive into the sun, you will take her place and the city will live.",
+            "start": 7.98,
+            "end": 14.65
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "toll-booth",
+          "label": "Approach the toll booth",
+          "hint": "The gatekeeper waits inside.",
+          "at": [
+            0.387,
+            0.625
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M646 468L717 470L737 474L741 480L741 511L734 515L721 515L716 519L715 626L714 639L711 643L713 653L716 655L720 653L727 654L725 670L722 671L718 666L716 668L716 686L719 688L717 689L717 696L726 697L729 702L726 706L729 710L744 712L740 719L741 725L738 726L738 728L741 728L741 739L737 741L740 743L738 749L741 756L739 762L741 773L739 785L741 789L734 793L729 793L729 790L735 789L735 787L730 785L729 780L731 774L733 774L730 769L735 767L736 764L733 763L734 759L731 759L731 761L727 761L722 766L720 760L724 759L721 759L719 754L716 755L718 759L716 762L716 778L712 778L702 784L699 782L685 782L681 784L676 782L670 784L662 783L655 790L650 790L649 793L641 790L640 787L644 785L643 783L639 785L635 783L625 785L616 781L597 782L590 789L581 787L579 790L577 786L565 780L558 782L553 780L551 782L528 780L532 783L532 787L529 789L523 789L519 786L522 780L496 780L496 782L492 783L486 777L484 771L487 760L487 748L489 746L487 737L487 706L489 704L487 699L488 658L493 650L491 647L492 627L490 625L491 602L493 598L491 596L492 555L488 538L489 514L486 509L477 506L461 495L459 477L467 471L486 469L545 471L550 469L573 469L591 471Z"
+          },
+          "to": null,
+          "collect": true,
+          "figure": {
+            "model": "figures/sun-gate-toll-booth.glb",
+            "icon": "figures/sun-gate-toll-booth.webp",
+            "name": "The toll booth"
+          },
+          "film": {
+            "src": "films/sun-gate-toll-booth.mp4",
+            "src720": "films/sun-gate-toll-booth-720.mp4",
+            "seconds": 8
+          }
+        },
+        {
+          "id": "android-key",
+          "label": "Turn the brass key",
+          "hint": "The key to the sun itself.",
+          "at": [
+            0.498,
+            0.633
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M754 643L775 645L781 654L781 660L776 662L761 655L754 656L752 653L752 645Z"
+          },
+          "to": "end-win-sunrise",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/sun-gate-android-key.mp4",
+            "src720": "films/sun-gate-android-key-720.mp4",
+            "seconds": 10.125
+          },
+          "rewind": {
+            "src": "films/sun-gate-android-key-rewind.mp4",
+            "src720": "films/sun-gate-android-key-rewind-720.mp4",
+            "seconds": 10.125
+          }
+        },
+        {
+          "id": "coupe-windshield",
+          "label": "Drive into the sun",
+          "hint": "The road ahead is a choice.",
+          "at": [
+            0.625,
+            0.654
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 1024,
+            "path": "M919 646L950 648L964 646L984 649L1012 648L1018 652L1021 660L1033 669L1032 674L1045 687L1045 692L1010 692L998 689L973 689L967 692L934 692L928 689L869 692L866 688L872 675L872 663L878 657L878 655L872 655L871 651L881 652L888 648L917 648Z"
+          },
+          "to": "end-death-derezz",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/sun-gate-coupe-windshield.mp4",
+            "src720": "films/sun-gate-coupe-windshield-720.mp4",
+            "seconds": 15.083
+          },
+          "rewind": {
+            "src": "films/sun-gate-coupe-windshield-rewind.mp4",
+            "src720": "films/sun-gate-coupe-windshield-rewind-720.mp4",
+            "seconds": 15.083
+          }
+        }
+      ]
+    },
+    {
+      "id": "end-death-derezz",
+      "title": "You Dissolve Into Static",
+      "chapter": "The last road",
+      "caption": "The sun goes out, and the grid forgets you.",
+      "still": "stills/end-death-derezz.webp",
+      "loop": null,
+      "narration": {
+        "src": "audio/narration-end-death-derezz.mp3",
+        "lines": [
+          {
+            "text": "You let the sun go dark.",
+            "start": 0.64,
+            "end": 1.89
+          },
+          {
+            "text": "The grid cannot hold without her, and the city forgets itself.",
+            "start": 2.38,
+            "end": 5.44
+          },
+          {
+            "text": "In the end, the road is only light, and the light is going out.",
+            "start": 5.92,
+            "end": 9.44
+          }
+        ]
+      },
+      "ending": {
+        "kind": "death",
+        "title": "You Dissolve Into Static",
+        "text": "The grid flickers out, the sun tears open, and you are lost in the dark."
+      },
+      "hotspots": []
+    },
+    {
+      "id": "end-win-sunrise",
+      "title": "The First Dawn",
+      "chapter": "The Sun Rises",
+      "caption": "The arcade is quiet, and the sun has finally moved.",
+      "still": "stills/end-win-sunrise.webp",
+      "loop": null,
+      "narration": {
+        "src": "audio/narration-end-win-sunrise.mp3",
+        "lines": [
+          {
+            "text": "The sun has set, and the city has woken into its first dawn.",
+            "start": 0.54,
+            "end": 3.38
+          },
+          {
+            "text": "The coupe brought you back to the arcade, and the world is still.",
+            "start": 4.04,
+            "end": 7.03
+          },
+          {
+            "text": "Somewhere out there, the grid is humming, but the light is real.",
+            "start": 7.6,
+            "end": 10.33
+          }
+        ]
+      },
+      "ending": {
+        "kind": "end",
+        "title": "The Sun Rises",
+        "text": "You free the architect, the sun rises, and the city breathes."
+      },
+      "hotspots": []
+    }
+  ]
+}
